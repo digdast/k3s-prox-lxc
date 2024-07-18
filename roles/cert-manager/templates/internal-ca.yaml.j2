@@ -1,0 +1,8 @@
+apiVersion: v1
+data:
+  internal-ca.pem: |
+    {{ internal_ca_cert }}
+kind: ConfigMap
+metadata:
+  name: ca-pemstore
+  namespace: cert-manager
